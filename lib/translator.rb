@@ -3,6 +3,13 @@ require "yaml"
 
 def load_library(path)
   library = YAML.load_file(path)
+  
+  library.each do |name, array|
+    library[name] = {
+      english: array[0]
+      japanese: array[1]
+    }
+  end
 end
 
 def get_japanese_emoticon
