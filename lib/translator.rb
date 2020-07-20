@@ -20,6 +20,7 @@ def get_japanese_emoticon(path, emoticon)
       return organized_library[name][:japanese]
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, emoticon)
