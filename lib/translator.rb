@@ -14,6 +14,12 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   organized_library = load_library(path)
+  
+  organized_library.each do |name, language|
+    organized_library[name].each do |language, representation|
+      if 
+    end
+  end
 end
 
 def get_english_meaning(path, emoticon)
