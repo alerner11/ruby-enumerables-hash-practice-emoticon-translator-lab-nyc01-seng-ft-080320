@@ -16,7 +16,7 @@ def get_japanese_emoticon(path, emoticon)
   organized_library = load_library(path)
   
   organized_library.each do |name, language|
-    if language[0] == emoticon
+    if organized_library[name][:english] == emoticon
       return language[1]
     end
   end
