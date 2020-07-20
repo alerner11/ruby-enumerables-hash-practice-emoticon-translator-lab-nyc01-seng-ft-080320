@@ -6,7 +6,7 @@ def load_library(path)
   
   library.each do |name, array|
     library[name] = {
-      english: array[0]
+      english: array[0],
       japanese: array[1]
     }
   end
